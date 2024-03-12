@@ -6,7 +6,7 @@
   <link href="https://www.shallowrecall.top/atom.xml" rel="self"/>
   
   <link href="https://www.shallowrecall.top/"/>
-  <updated>2024-02-28T11:51:50.304Z</updated>
+  <updated>2024-03-12T02:21:54.568Z</updated>
   <id>https://www.shallowrecall.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>堆和栈的区别</title>
+    <link href="https://www.shallowrecall.top/posts/322da11e.html"/>
+    <id>https://www.shallowrecall.top/posts/322da11e.html</id>
+    <published>2024-03-11T10:56:28.000Z</published>
+    <updated>2024-03-12T02:21:54.568Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Stack-Vs-Heap"><a href="#Stack-Vs-Heap" class="headerlink" title="Stack Vs Heap"></a>Stack Vs Heap</h2><h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><ul><li>管理方式不同：栈是由编译器自动申请和释放空间，堆是需要程序员手动申请和释放；</li><li>空间大小不同：栈的空间是有限的，在32位平台下，VC6下默认为1M，堆最大可以到4G；</li><li>能否产生碎片：栈和数据结构中的栈原理相同，在弹出一个元素之前，上一个已经弹出了，不会产生碎片，如果不停地调用malloc、free堆造成内存碎片很多;</li><li>生长方向不同：堆生长方向是向上的，也就是向着地址增加的方向，栈刚好相反，向着内存减小的方向生长。</li><li>分配方式不同：堆都是动态分配的，没有静态分配的堆。栈有静态分配和动态分配。静态分配是编译器完成的，比如局部变量的分配。动态分配由 malloc 函数进行分配，但是栈的动态分配和堆是不同的，它的动态分配是由编译器进行释放，无需我们手工实现。</li><li>分配效率不同：栈的效率比堆高很多。栈是机器系统提供的数据结构，计算机在底层提供栈的支持，分配专门的寄存器来存放栈的地址，压栈出栈都有相应的指令，因此比较快。堆是由库函数提供的，机制很复杂，库函数会按照一定的算法进行搜索内存，因此比较慢。</li></ul><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Stack-Vs-Heap&quot;&gt;&lt;a href=&quot;#Stack-Vs-Heap&quot; class=&quot;headerlink&quot; title=&quot;Stack Vs Heap&quot;&gt;&lt;/a&gt;Stack Vs Heap&lt;/h2&gt;&lt;h3 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>IO流</title>
@@ -110,6 +130,26 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows运行命令大全</title>
+    <link href="https://www.shallowrecall.top/posts/24e1cb9d.html"/>
+    <id>https://www.shallowrecall.top/posts/24e1cb9d.html</id>
+    <published>2024-01-12T10:20:07.000Z</published>
+    <updated>2024-03-12T04:02:22.025Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Windows运行命令大全"><a href="#Windows运行命令大全" class="headerlink" title="Windows运行命令大全"></a>Windows运行命令大全</h1><div class="table-container"><table><thead><tr><th>关于Windows</th><th>winver</th></tr></thead><tbody><tr><td>添加设备</td><td>devicepairingwizard</td></tr><tr><td>添加硬件</td><td>hdwwiz</td></tr><tr><td>用户账户</td><td>netplwiz</td></tr><tr><td>授权管理器</td><td>azman（Win7）</td></tr><tr><td>备份和还原</td><td>sdclt</td></tr><tr><td>Bluetooth文件传送</td><td>fsquirt</td></tr><tr><td>计算器</td><td>calc</td></tr><tr><td>证书</td><td>certmgr（Win7）</td></tr><tr><td>性能选项</td><td>systempropertiesperformance</td></tr><tr><td>数据执行保护</td><td>systempropertiesdataexecutionprevention</td></tr><tr><td>打印机用户界面</td><td>printui</td></tr><tr><td>字符映射表</td><td>charmap</td></tr><tr><td>ClearType文本调谐器</td><td>cttune</td></tr><tr><td>颜色管理</td><td>colorcpl</td></tr><tr><td>命令提示符</td><td>cmd</td></tr><tr><td>组件服务</td><td>comexp（Win7）</td></tr><tr><td>组件服务</td><td>dcomcnfg</td></tr><tr><td>计算机管理</td><td>compmgmt</td></tr><tr><td>计算机管理</td><td>compmgmtlauncher</td></tr><tr><td>连接到网络投影仪</td><td>netproj（Win7）</td></tr><tr><td>显示切换</td><td>displayswitch</td></tr><tr><td>控制面板</td><td>control</td></tr><tr><td>创建共享文件夹向导</td><td>shrpubw</td></tr><tr><td>创建系统修复光盘</td><td>recdisc</td></tr><tr><td>存储的用户名和密码</td><td>credwiz</td></tr><tr><td>默认位置</td><td>locationnotifications（Win7）</td></tr><tr><td>设备管理器</td><td>devmgmt.msc</td></tr><tr><td>Microsoft 支持诊断工具</td><td>msdt</td></tr><tr><td>数字化校准工具</td><td>tabcal</td></tr><tr><td>DirectX 诊断工具</td><td>dxdiag</td></tr><tr><td>磁盘清理</td><td>cleanmgr</td></tr><tr><td>优化驱动器</td><td>dfrgui</td></tr><tr><td>磁盘管理</td><td>diskmgmt.msc</td></tr><tr><td>显示</td><td>dpiscaling</td></tr><tr><td>显示颜色校准</td><td>dccw</td></tr><tr><td>受保护的内容迁移</td><td>dpapimig</td></tr><tr><td>驱动程序验证程序管理器</td><td>verifier</td></tr><tr><td>轻松使用设置中心</td><td>utilman</td></tr><tr><td>加密文件系统</td><td>rekeywiz</td></tr><tr><td>事件查看器</td><td>eventvwr</td></tr><tr><td>传真封面编辑器</td><td>fxscover</td></tr><tr><td>文件签名验证</td><td>sigverif</td></tr><tr><td>Windows 入门</td><td>gettingstarted（Win7）</td></tr><tr><td>IExpress 向导</td><td>iexpress</td></tr><tr><td>导入 Windows 联系人</td><td>wabmig</td></tr><tr><td>Microsoft iSCSI</td><td>iscsicpl</td></tr><tr><td>安装或卸载显示语言</td><td>lpksetup</td></tr><tr><td>本地组策略编辑器</td><td>gpedit.msc</td></tr><tr><td>本地安全策略</td><td>secpol.msc</td></tr><tr><td>本地用户和组</td><td>lusrmgr.msc</td></tr><tr><td>放大镜</td><td>magnify</td></tr><tr><td>Microsoft Windows 恶意软件删除工具</td><td>mrt</td></tr><tr><td>数学输入面板</td><td>mip</td></tr><tr><td>MMC管理控制台</td><td>mmc</td></tr><tr><td>NAP 客户端配置</td><td>napclcfg（Win7）</td></tr><tr><td>讲述人设置</td><td>narrator</td></tr><tr><td>扫描仪</td><td>wiaacmgr</td></tr><tr><td>记事本</td><td>notepad</td></tr><tr><td>ODBC 数据源管理程序</td><td>odbcad32</td></tr><tr><td>屏幕键盘</td><td>osk</td></tr><tr><td>画图</td><td>mspaint</td></tr><tr><td>性能监视器</td><td>perfmon</td></tr><tr><td>电话括号程序</td><td>dialer</td></tr><tr><td>演示设置</td><td>presentationsettings</td></tr><tr><td>打印管理</td><td>printmanagement.msc</td></tr><tr><td>打印机迁移</td><td>printbrmui</td></tr><tr><td>专用字符编辑程序</td><td>eudcedit</td></tr><tr><td>步骤记录器</td><td>psr</td></tr><tr><td>注册表编辑器</td><td>regedit</td></tr><tr><td>远程桌面连接</td><td>mstsc</td></tr><tr><td>资源监视器</td><td>resmon</td></tr><tr><td>组策略结果集</td><td>rsop</td></tr><tr><td>保护 Windows 账户数据库的安全</td><td>syskey</td></tr><tr><td>服务</td><td>services.msc</td></tr><tr><td>设置程序访问此计算机的默认值</td><td>computerdefaults</td></tr><tr><td>共享文件夹</td><td>fsmgmt.msc</td></tr><tr><td>截图工具</td><td>snippingtool</td></tr><tr><td>录音机</td><td>soundrecorder（Win7）</td></tr><tr><td>SQL Server 客户端网络实用工具</td><td>cliconfg</td></tr><tr><td>便签</td><td>stikynot</td></tr><tr><td>同步中心</td><td>mobsync</td></tr><tr><td>系统配置</td><td>msconfig</td></tr><tr><td>系统信息</td><td>msinfo32</td></tr><tr><td>系统属性-高级</td><td>systempropertiesadvanced</td></tr><tr><td>系统属性-计算机名</td><td>systempropertiescomputername</td></tr><tr><td>系统属性-硬件</td><td>systempropertieshardware</td></tr><tr><td>系统属性-远程</td><td>systempropertiesremote</td></tr><tr><td>系统属性-系统保护</td><td>systempropertiesprotection</td></tr><tr><td>系统还原</td><td>rstrui</td></tr><tr><td>任务管理器</td><td>taskmgr</td></tr><tr><td>任务计划程序</td><td>taskschd.msc</td></tr><tr><td>受信任的平台(TPM)管理</td><td>tpm.msc</td></tr><tr><td>用户账户控制设置</td><td>useraccountcontrolsettings</td></tr><tr><td>音量合成器</td><td>sndvol</td></tr><tr><td>Windows 激活</td><td>slui</td></tr><tr><td>联系人</td><td>wab</td></tr><tr><td>Windows 光盘映像刻录机</td><td>isoburn</td></tr><tr><td>Windows 资源管理器</td><td>explorer</td></tr><tr><td>Windows 传真和扫描</td><td>wfs</td></tr><tr><td>Windows 功能</td><td>optionalfeatures</td></tr><tr><td>高级安全 Windows 防火墙</td><td>wf.msc</td></tr><tr><td>Windows 帮助和支持</td><td>winhlp32</td></tr><tr><td>Windows 日记本</td><td>journal</td></tr><tr><td>Windows Media Player</td><td>wmplayer</td></tr><tr><td>Windows 内存诊断</td><td>mdsched</td></tr><tr><td>Windows 移动中心</td><td>mblctr</td></tr><tr><td>Windows Powershell</td><td>powershell</td></tr><tr><td>Windows PowerShell ISE</td><td>powershell_ise</td></tr><tr><td>Windows 远程协助</td><td>msra</td></tr><tr><td>Windows 脚本宿主设置</td><td>wscript</td></tr><tr><td>Windows Update</td><td>wuapp（Win7）</td></tr><tr><td>Windows 更新独立安装程序</td><td>wusa</td></tr><tr><td>WMI 管理</td><td>wmimgmt.msc</td></tr><tr><td>WMI 测试器</td><td>wbemtest</td></tr><tr><td>写字板</td><td>write</td></tr><tr><td>XPS 查看器</td><td>xpsrchvw</td></tr><tr><td>屏幕分辨率</td><td>desk.cpl</td></tr><tr><td>鼠标属性</td><td>main.cpl</td></tr><tr><td>安全性与维护</td><td>wscui.cpl</td></tr><tr><td>网络连接</td><td>ncpa.cpl</td></tr><tr><td>电源选项</td><td>powercfg.cpl</td></tr><tr><td>卸载或更改程序</td><td>appwiz.cpl</td></tr><tr><td>系统属性</td><td>sysdm.cpl</td></tr><tr><td>Windows 防火墙</td><td>firewall.cpl</td></tr></tbody></table></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Windows运行命令大全&quot;&gt;&lt;a href=&quot;#Windows运行命令大全&quot; class=&quot;headerlink&quot; title=&quot;Windows运行命令大全&quot;&gt;&lt;/a&gt;Windows运行命令大全&lt;/h1&gt;&lt;div class=&quot;table-container&quot;&gt;</summary>
       
     
     
